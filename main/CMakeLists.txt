@@ -1,0 +1,32 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "ethernet.c"
+        "usb_storage.c"
+        "http_server.c"
+        "wifi_manager.c"
+        "mdns_manager.c"
+        "download_manager.c"
+    INCLUDE_DIRS
+        "."
+    REQUIRES
+        esp_eth
+        esp_netif
+        esp_event
+        esp_http_server
+        esp_http_client
+        mbedtls
+        json
+        esp_timer
+        nvs_flash
+        fatfs
+        usb
+        usb_host_msc
+        ethernet_init
+        esp_hw_support
+        esp_wifi
+        mdns
+        spi_flash
+        esp_psram
+        esp_system
+)
